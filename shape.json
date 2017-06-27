@@ -1,0 +1,14 @@
+{
+    "game":{
+        "started": false,
+    },
+
+    "players": [{
+        name: 
+        score:[]
+    }]
+    allCards:[
+        { value: type:, score}
+    ]
+    cardDesk
+}

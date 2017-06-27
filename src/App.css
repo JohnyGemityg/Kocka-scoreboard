@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.players{
+    display: flex;
+    justify-content: space-around;
+}
+
+.players h2{
+   cursor: pointer;
+   font-weight: normal 
+}
+
+.players .player{
+    flex: 1;
+}
+
+.player .active{
+    color:limegreen;
+    font-weight: bolder;
+}
+
+.players .cards{
+    display: flex;
+    justify-content: center;
+}
+
+ .card {
+     width: 10%;
+        border-radius:8%;
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        margin: 2px 5px;
+        padding: 4% 0;
+        box-sizing:border-box
+}
+
+ .card:hover {
+   border-width:3px;
+   margin: -1px 5px;
+}
+
+ .players .card  > .symbol {
+    font-size: 20px;
+}
+
+.cardDesk .card  > .symbol {
+    font-size: 50px;
+}
+
+.card.s, .card.k{
+    color: red;
+    border-color: red; 
+}
+.card.p, .card.r{
+    color: black;
+    border-color: black; 
+}
+
+.card.p > .symbol:after{
+    content: "♠"; 
+}
+
+.card.k > .symbol:after{
+    content: "♦"; 
+}
+.card.s > .symbol:after{
+    content: "♥"; 
+}
+.card.r > .symbol:after{
+    content: "♣"; 
+}
+
+.cardDesk{
+    display: flex;
+    margin: 0 20px;
+}
+
+.label-input{
+    margin: 10px 0;
+}
+
+.label-input input{
+    height: 50px;
+    width: 400px;
+    line-height: 100%;
+    font-size:35px; 
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+.label-input label{
+    font-size:35px; 
+}
+
+.score-table{
+  width: 100%;
+  table-layout: fixed;
+}
+
+.score-table th{
+  font-size: 60px;
+}
+
+
+.score-table .results-row > td{
+  border-bottom: 2px solid black; 
+  font-size: 30px;
+}
+
+.button{
+    width: 200px;
+    height: 50px;
+    font-size: 30px; 
+}
