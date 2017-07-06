@@ -72,7 +72,7 @@ export default (state = [], { type, payload }) => {
     case 'SAVE_ROUND':
       return state.map(card => ({ ...card, marked: false }));
     case 'REMOVE_CARD_PLAYER':
-      return state.map(card => ((card.type === payload.card.type && card.value === payload.card.value) ? card : { ...card, marked: false }));
+      return state.map(card => ((card.type === payload.card.type && card.value === payload.card.value) ? { ...card, marked: false } : card));
     default:
       return state;
   }
